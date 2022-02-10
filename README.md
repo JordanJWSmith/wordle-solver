@@ -5,7 +5,7 @@ A python CLI application to solve Wordle puzzles.
 Run `python main.py` to launch the script.
 
 You'll be asked to enter the green letters of your word so far, with any other letters denoted by an underscore ('\_').
-For example, if you know your word has the letters `c` and `e` in positions 4 and 5, enter `___ce`. 
+For example, if you know your word has the letters `c` and `e` in positions 4 and 5, enter `_ _ _ c e`. 
 If you have no green letters so far, enter '\_\_\_\_\_'.
 
 You'll then be asked to enter the yellow letters of your word so far. 
