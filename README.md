@@ -1,5 +1,5 @@
 # wordle-solver
-A python CLI application to solve Wordle puzzles.
+A python CLI application to help solve Wordle puzzles.
 
 # Instructions
 Run `python main.py` to launch the script.
