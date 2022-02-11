@@ -1,4 +1,4 @@
-from functions.helpers import check_green, check_yellow
+from functions.helpers import check_green, check_yellow, clear_console
 from functions.inputs import get_green, get_yellow, get_grey
 
 
@@ -6,15 +6,16 @@ def main():
     with open("dictionary/five_dict.txt", 'r') as f:
         dictionary = f.read()
 
-    dictionary = [word for word in dictionary.split('\n')] 
+    dictionary = [word for word in dictionary.split('\n')]
 
     alphabet = "qwertyuiopasdfghjklzxcvbnm"
 
+    clear_console()
     green_letters = get_green()
     yellow_letters = get_yellow()
     grey_letters = get_grey()
 
-    green_dict = {letter: index for index, letter in enumerate(green_letters) if letter in alphabet}
+    green_dict = {index: letter for index, letter in enumerate(green_letters) if letter in alphabet}
     yellow_dict = {letter: yellow_letters.count(letter) for letter in yellow_letters}
 
     alphabet = alphabet.translate(str.maketrans({char: None for char in grey_letters}))
